@@ -10,4 +10,17 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'students-details';
+  students: Array<any> = [
+    {
+      "name": "Jimmy Johnson",
+      "city": "Johnsonville",
+      "studentImage": "",
+      "state": "VT",
+      "country": "Countrylandia",
+      "physics": 11,
+      "chemistry": 22,
+      "math": 33,
+      "computer": 44,
+    }
+  ]
 }
