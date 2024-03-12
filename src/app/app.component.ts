@@ -40,6 +40,7 @@ export class AppComponent {
       "computer": 88,
     }
   ];
+  sidebarExpanded: boolean = true;
   constructor(
     private fb: FormBuilder
   ) {
