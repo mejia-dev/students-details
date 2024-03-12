@@ -30,7 +30,8 @@
             "prefix": "students-details",
             "style": "kebab-case"
           }
-        ]
+        ],
+        "@typescript-eslint/indent":[1, 2]
       }
     },
     {
