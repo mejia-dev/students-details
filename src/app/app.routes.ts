@@ -10,17 +10,7 @@ export const routes: Routes = [
   },
   {
     path: 'dashboard',
-    component: DashboardComponent,
+    loadChildren: () => import('./dashboard/dashboard.module').then(m=>m.DashboardModule),
       canMatch: [authGuardGuard]
   }
-  // {
-  //   path: 'landing',
-  //   component: LandingComponent,
-  //   canMatch: [authGuardGuard]
-  // },
-  // {
-  //   path: 'students',
-  //   component: StudentRecordsComponent,
-  //   canMatch: [authGuardGuard]
-  // }
 ];
