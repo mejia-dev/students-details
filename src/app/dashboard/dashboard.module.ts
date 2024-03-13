@@ -24,6 +24,10 @@ const routes: Routes = [
         path: "landing",
         component: LandingComponent
       },
+      {
+        path: "students",
+        component: StudentRecordsComponent
+      }
     ]
   }
 ];
