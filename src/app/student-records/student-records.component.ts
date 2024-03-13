@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { AgGridModule } from 'ag-grid-angular';
+import { ColDef, GridApi } from 'ag-grid-community';
 
 @Component({
 	selector: 'students-details-student-records',
@@ -85,6 +86,25 @@ export class StudentRecordsComponent {
 			"website": "https://grimy-exposure.name"
 		}
 	];
+
+	columnDefs: ColDef[] = [
+		{ field: "name"},
+		{ field: "country"},
+		{ field: "state"},
+		{ field: "passportDeclaration"},
+		{ field: "fitnessDeclaration"},
+		{ field: "courseName"},
+		{ field: "subjects"},
+		{ field: "city"},
+		{ field: "street"},
+		{ field: "address2"},
+		{ field: "city"},
+		{ field: "state"},
+		{ field: "country"},
+		{ field: "phone"},
+		{ field: "email"},
+
+	]
 
 	onGridReady(params: any) {
 		this.gridApi = params?.api;

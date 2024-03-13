@@ -2,6 +2,7 @@
 <ag-grid-angular
   class="ag-theme-quartz"
   (gridReady)="onGridReady($event)"
-  [rowData]="apiResponse">
-
+  [columnDefs]="columnDefs"
+  [rowData]="apiResponse"
+  style="height: 800px; width: 100%;">
 </ag-grid-angular>
