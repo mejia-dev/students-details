@@ -5,7 +5,7 @@ import { StudentRecordsComponent } from "./student-records/student-records.compo
 
 export const routes: Routes = [
   {
-    path: '',
+    path: 'landing',
     component: LandingComponent
   },
   {
