@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
-import { Observable, of, tap, delay } from "rxjs";
+import { Observable, of } from "rxjs";
+import { delay, tap } from "rxjs/operators";
 
 @Injectable({
   providedIn: 'root'
@@ -7,9 +8,10 @@ import { Observable, of, tap, delay } from "rxjs";
 export class AuthService {
   isLoggedIn: boolean = false;
   redirectUrl: string|null = null;
+  // this is an example of a login process. This would likely be replaced with an auth api
   login(): Observable<boolean> {
     return of(true).pipe(
-      delay(1000),
+      delay(2000),
       tap(() => this.isLoggedIn = true)
     );
   }
