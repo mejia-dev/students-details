@@ -17,7 +17,7 @@
 
     <p><a href="#">Forgot password?</a></p>
     
-    <button class="btn btn-outline-light btn-lg px-5" *ngIf="!authService.isLoggedIn">Log In</button>
-    <button class="btn btn-outline-light btn-lg px-5" *ngIf="authService.isLoggedIn">Log Out</button>
+    <button class="btn btn-outline-light btn-lg px-5" *ngIf="!authService.isLoggedIn" (click)="login()">Log In</button>
+    <button class="btn btn-outline-light btn-lg px-5" *ngIf="authService.isLoggedIn" (click)="logout()">Log Out</button>
   </div>
 </section>
