@@ -1,1 +1,23 @@
-<p>login works!</p>
+<section class="login-section">
+  <div class="login-section__form">
+    <div class="login-section__head">
+      <h2>Login</h2>
+      <p class="text-white-50 mb-5">Enter your email address and password.</p>
+    </div>
+
+    <div class="login-section__form--field">
+      <input type="email" class="form-control form-control-input">
+      <label>Email</label>
+    </div>
+
+    <div class="login-section__form--field">
+      <input type="password" class="form-control form-control-input">
+      <label>Password</label>
+    </div>
+
+    <p><a href="#">Forgot password?</a></p>
+    
+    <button class="btn btn-outline-light btn-lg px-5" *ngIf="!authService.isLoggedIn">Log In</button>
+    <button class="btn btn-outline-light btn-lg px-5" *ngIf="authService.isLoggedIn">Log Out</button>
+  </div>
+</section>
